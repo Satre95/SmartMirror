@@ -10,6 +10,7 @@ public:
     void update();
     void draw();
     
+    void drawLiveVideo();
     
     ofxFaceTracker tracker;
     ofVideoGrabber grabber;
