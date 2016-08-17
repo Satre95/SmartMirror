@@ -1,4 +1,6 @@
 ofxCv
 ofxFaceTracker
 ofxHistoryPlot
+ofxJSON
+ofxNetwork
 ofxOpenCv
