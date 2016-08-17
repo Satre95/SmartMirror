@@ -1,6 +1,8 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxHistoryPlot.h"
+#include "ofxJSON.h"
 
 class ofApp : public ofBaseApp{
 	public:
@@ -19,4 +21,12 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+    
+        void stockPlotSetup();
+        void stockPlotUpdate();
+    
+        ofxHistoryPlot * stockChart;
+        ofxJSONElement stockResult;
+        std::vector<float> stockData;
+        int stockPlotter;
 };

@@ -9,7 +9,420 @@
 		<string>46</string>
 		<key>objects</key>
 		<dict>
-			<key>4EC6A0E8C8383519E5E10736</key>
+			<key>737559D6433288C6ECA5A1A1</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxUDPManager.h</string>
+				<key>path</key>
+				<string>../Downloads/of_v0.9.3_osx_release/addons/ofxNetwork/src/ofxUDPManager.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>52C8072C96B9730F0FD5899B</key>
+			<dict>
+				<key>fileRef</key>
+				<string>860F6112CCDC8D253EA1D979</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>860F6112CCDC8D253EA1D979</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxUDPManager.cpp</string>
+				<key>path</key>
+				<string>../Downloads/of_v0.9.3_osx_release/addons/ofxNetwork/src/ofxUDPManager.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>5A7441A30E95D92E76A9301B</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxTCPServer.h</string>
+				<key>path</key>
+				<string>../Downloads/of_v0.9.3_osx_release/addons/ofxNetwork/src/ofxTCPServer.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>5C4C91A7228FB401FEF686A0</key>
+			<dict>
+				<key>fileRef</key>
+				<string>08F47C3617EF39F8C6A953D2</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>08F47C3617EF39F8C6A953D2</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxTCPServer.cpp</string>
+				<key>path</key>
+				<string>../Downloads/of_v0.9.3_osx_release/addons/ofxNetwork/src/ofxTCPServer.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>40FD36DBA098C8DFEDA268CE</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxTCPManager.h</string>
+				<key>path</key>
+				<string>../Downloads/of_v0.9.3_osx_release/addons/ofxNetwork/src/ofxTCPManager.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>078D7E3940209DB92CF7F979</key>
+			<dict>
+				<key>fileRef</key>
+				<string>6982B2912BCD8BFB3BF95ABB</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>6982B2912BCD8BFB3BF95ABB</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxTCPManager.cpp</string>
+				<key>path</key>
+				<string>../Downloads/of_v0.9.3_osx_release/addons/ofxNetwork/src/ofxTCPManager.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>DAFEEFC13E5A566841011AB3</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxTCPClient.h</string>
+				<key>path</key>
+				<string>../Downloads/of_v0.9.3_osx_release/addons/ofxNetwork/src/ofxTCPClient.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>601AA2451E78A207F15974D0</key>
+			<dict>
+				<key>fileRef</key>
+				<string>D8772F3CE20D729E1B82862D</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>D8772F3CE20D729E1B82862D</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxTCPClient.cpp</string>
+				<key>path</key>
+				<string>../Downloads/of_v0.9.3_osx_release/addons/ofxNetwork/src/ofxTCPClient.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>FF1E71281ADE3FB9137C1E75</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxNetworkUtils.h</string>
+				<key>path</key>
+				<string>../Downloads/of_v0.9.3_osx_release/addons/ofxNetwork/src/ofxNetworkUtils.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>219374A14594D121F27FED3A</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>E6FCCF031A9B5C3CAFAF683B</string>
+					<string>FF1E71281ADE3FB9137C1E75</string>
+					<string>D8772F3CE20D729E1B82862D</string>
+					<string>DAFEEFC13E5A566841011AB3</string>
+					<string>6982B2912BCD8BFB3BF95ABB</string>
+					<string>40FD36DBA098C8DFEDA268CE</string>
+					<string>08F47C3617EF39F8C6A953D2</string>
+					<string>5A7441A30E95D92E76A9301B</string>
+					<string>860F6112CCDC8D253EA1D979</string>
+					<string>737559D6433288C6ECA5A1A1</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>src</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>18240ECCE4076FB0833A8578</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>219374A14594D121F27FED3A</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>ofxNetwork</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>E6FCCF031A9B5C3CAFAF683B</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxNetwork.h</string>
+				<key>path</key>
+				<string>../Downloads/of_v0.9.3_osx_release/addons/ofxNetwork/src/ofxNetwork.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>CCDC6F9CCF925CC402160B85</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>63DD6749C2E317B995F97398</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>src</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>D7A5992A86371DFAA27D2418</key>
+			<dict>
+				<key>fileRef</key>
+				<string>63DD6749C2E317B995F97398</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>63DD6749C2E317B995F97398</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>jsoncpp.cpp</string>
+				<key>path</key>
+				<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs/jsoncpp/src/jsoncpp.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>4DDE6457515B687867DAD4ED</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>json.h</string>
+				<key>path</key>
+				<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs/jsoncpp/include/json/json.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>58AD3BD71B781D9BC25763C8</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>244E390502F1A4E4BFDBDF38</string>
+					<string>4DDE6457515B687867DAD4ED</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>json</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>D486FC87F063317BB47E9FAC</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>58AD3BD71B781D9BC25763C8</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>include</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>977A836DD2C489CCC5E330FF</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>D486FC87F063317BB47E9FAC</string>
+					<string>CCDC6F9CCF925CC402160B85</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>jsoncpp</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>F40E80CB2D443CBA9581DD03</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>977A836DD2C489CCC5E330FF</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>libs</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>244E390502F1A4E4BFDBDF38</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>json-forwards.h</string>
+				<key>path</key>
+				<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs/jsoncpp/include/json/json-forwards.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>3906C257AFD9E1BE03420F82</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxJSONElement.h</string>
+				<key>path</key>
+				<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/src/ofxJSONElement.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>E90AEB3CA60AAD90E7F513A1</key>
+			<dict>
+				<key>fileRef</key>
+				<string>33775D429631A0108FC9ED25</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>33775D429631A0108FC9ED25</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxJSONElement.cpp</string>
+				<key>path</key>
+				<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/src/ofxJSONElement.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>292AF6148769654D0DF26018</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>C1C07066B56B044D0B47BEE1</string>
+					<string>33775D429631A0108FC9ED25</string>
+					<string>3906C257AFD9E1BE03420F82</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>src</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>2865DAEF86B1907A704CA70B</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>292AF6148769654D0DF26018</string>
+					<string>F40E80CB2D443CBA9581DD03</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>ofxJSON</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>C1C07066B56B044D0B47BEE1</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxJSON.h</string>
+				<key>path</key>
+				<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/src/ofxJSON.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>F6E13E6890E0519A125BA20A</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -20,7 +433,7 @@
 				<key>name</key>
 				<string>ofxHistoryPlot.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxHistoryPlot/src/ofxHistoryPlot.h</string>
+				<string>../Downloads/of_v0.9.3_osx_release/addons/ofxHistoryPlot/src/ofxHistoryPlot.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -28,8 +441,8 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>932CAB813CEE8FAAC0E75105</string>
-					<string>4EC6A0E8C8383519E5E10736</string>
+					<string>1232CF1B128E5566725B890F</string>
+					<string>F6E13E6890E0519A125BA20A</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -51,14 +464,14 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>B333944A61C5155D697ABEF5</key>
+			<key>4AE2942A0A11B019454506AA</key>
 			<dict>
 				<key>fileRef</key>
-				<string>932CAB813CEE8FAAC0E75105</string>
+				<string>1232CF1B128E5566725B890F</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>932CAB813CEE8FAAC0E75105</key>
+			<key>1232CF1B128E5566725B890F</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -69,7 +482,7 @@
 				<key>name</key>
 				<string>ofxHistoryPlot.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxHistoryPlot/src/ofxHistoryPlot.cpp</string>
+				<string>../Downloads/of_v0.9.3_osx_release/addons/ofxHistoryPlot/src/ofxHistoryPlot.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -89,6 +502,8 @@
 				<key>children</key>
 				<array>
 					<string>C65E01A63772FC3E5D61CE7F</string>
+					<string>2865DAEF86B1907A704CA70B</string>
+					<string>18240ECCE4076FB0833A8578</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -106,7 +521,7 @@
 				<key>name</key>
 				<string>openFrameworksLib.xcodeproj</string>
 				<key>path</key>
-				<string>../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj</string>
+				<string>../Downloads/of_v0.9.3_osx_release/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -243,7 +658,14 @@
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
 						<string>src</string>
-						<string>../../../addons/ofxHistoryPlot/src</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxHistoryPlot/src</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs/jsoncpp</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs/jsoncpp/include</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs/jsoncpp/include/json</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs/jsoncpp/src</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/src</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxNetwork/src</string>
 					</array>
 					<key>CONFIGURATION_BUILD_DIR</key>
 					<string>$(SRCROOT)/bin/</string>
@@ -302,7 +724,14 @@
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
 						<string>src</string>
-						<string>../../../addons/ofxHistoryPlot/src</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxHistoryPlot/src</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs/jsoncpp</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs/jsoncpp/include</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs/jsoncpp/include/json</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs/jsoncpp/src</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/src</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxNetwork/src</string>
 					</array>
 					<key>CONFIGURATION_BUILD_DIR</key>
 					<string>$(SRCROOT)/bin/</string>
@@ -359,7 +788,13 @@
 				<array>
 					<string>E4B69E200A3A1BDC003C02F2</string>
 					<string>E4B69E210A3A1BDC003C02F2</string>
-					<string>B333944A61C5155D697ABEF5</string>
+					<string>4AE2942A0A11B019454506AA</string>
+					<string>E90AEB3CA60AAD90E7F513A1</string>
+					<string>D7A5992A86371DFAA27D2418</string>
+					<string>601AA2451E78A207F15974D0</string>
+					<string>078D7E3940209DB92CF7F979</string>
+					<string>5C4C91A7228FB401FEF686A0</string>
+					<string>52C8072C96B9730F0FD5899B</string>
 				</array>
 				<key>isa</key>
 				<string>PBXSourcesBuildPhase</string>
@@ -444,7 +879,14 @@
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
 						<string>src</string>
-						<string>../../../addons/ofxHistoryPlot/src</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxHistoryPlot/src</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs/jsoncpp</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs/jsoncpp/include</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs/jsoncpp/include/json</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs/jsoncpp/src</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/src</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxNetwork/src</string>
 					</array>
 					<key>COMBINE_HIDPI_IMAGES</key>
 					<string>YES</string>
@@ -456,7 +898,7 @@
 						<string>$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)</string>
 					</array>
 					<key>FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1</key>
-					<string>"$(SRCROOT)/../../../libs/glut/lib/osx"</string>
+					<string>"$(SRCROOT)/../Downloads/of_v0.9.3_osx_release/libs/glut/lib/osx"</string>
 					<key>GCC_DYNAMIC_NO_PIC</key>
 					<string>NO</string>
 					<key>GCC_GENERATE_DEBUGGING_SYMBOLS</key>
@@ -493,7 +935,14 @@
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
 						<string>src</string>
-						<string>../../../addons/ofxHistoryPlot/src</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxHistoryPlot/src</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs/jsoncpp</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs/jsoncpp/include</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs/jsoncpp/include/json</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/libs/jsoncpp/src</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxJSON/src</string>
+						<string>../Downloads/of_v0.9.3_osx_release/addons/ofxNetwork/src</string>
 					</array>
 					<key>COMBINE_HIDPI_IMAGES</key>
 					<string>YES</string>
@@ -505,7 +954,7 @@
 						<string>$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)</string>
 					</array>
 					<key>FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1</key>
-					<string>"$(SRCROOT)/../../../libs/glut/lib/osx"</string>
+					<string>"$(SRCROOT)/../Downloads/of_v0.9.3_osx_release/libs/glut/lib/osx"</string>
 					<key>GCC_GENERATE_DEBUGGING_SYMBOLS</key>
 					<string>YES</string>
 					<key>GCC_MODEL_TUNING</key>
@@ -640,10 +1089,10 @@
 # Copy default icon file into App/Resources
 rsync -aved "$ICON_FILE" "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/"
 # Copy libfmod and change install directory for fmod to run
-rsync -aved ../../../libs/fmodex/lib/osx/libfmodex.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/";
+rsync -aved ../Downloads/of_v0.9.3_osx_release/libs/fmodex/lib/osx/libfmodex.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/";
 install_name_tool -change @executable_path/libfmodex.dylib @executable_path/../Frameworks/libfmodex.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME";
 # Copy GLUT framework (must remove for AppStore submissions)
-rsync -aved ../../../libs/glut/lib/osx/GLUT.framework "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/"
+rsync -aved ../Downloads/of_v0.9.3_osx_release/libs/glut/lib/osx/GLUT.framework "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/"
 </string>
 			</dict>
 			<key>E4C2427710CC5ABF004149E2</key>
@@ -672,7 +1121,7 @@ rsync -aved ../../../libs/glut/lib/osx/GLUT.framework "$TARGET_BUILD_DIR/$PRODUC
 				<key>name</key>
 				<string>CoreOF.xcconfig</string>
 				<key>path</key>
-				<string>../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig</string>
+				<string>../Downloads/of_v0.9.3_osx_release/libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>

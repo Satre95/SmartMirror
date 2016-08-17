@@ -1,1 +1,3 @@
 ofxHistoryPlot
+ofxJSON
+ofxNetwork
