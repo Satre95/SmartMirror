@@ -7,6 +7,8 @@ using namespace ofxCv;
 void ofApp::setup(){
     stockPlotSetup();
     setupVideoGrabber();
+    bool weatherSetup = weatherAPISetup();
+    bool surfSetup = surfAPISetup();
 }
 
 //--------------------------------------------------------------
@@ -18,11 +20,13 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    stockChart->draw(10, 10, 640, 240);
-
+    ofBackground(0, 0, 0);
+    kevinDraw();
+    rachitDraw();
 }
 
-
+//------------------------------------------------------------------
+//MARK: Sid
 void ofApp::drawLiveVideo() {
     
 }
@@ -40,6 +44,12 @@ void ofApp::updateVideoGrabber() {
 }
 
 
+//--------------------------------------------------------------
+//MARK: Kevin
+
+void ofApp::kevinDraw() {
+    stockChart->draw(10, 10, 640, 240);
+}
 void ofApp::stockPlotSetup() {
     string one = "http://dev.markitondemand.com/MODApis/Api/v2/InteractiveChart/json?parameters=%7B%22Normalized%22%3Afalse%2C%22NumberOfDays%22%3A365%2C%22DataPeriod%22%3A%22Day%22%2C%22Elements%22%3A%5B%7B%22Symbol%22%3A%22";
     string two = "%22%2C%22Type%22%3A%22price%22%2C%22Params%22%3A%5B%22c%22%5D%7D%5D%7D";
@@ -86,4 +96,117 @@ void ofApp::stockPlotUpdate() {
         stockChart->update(stockData[stockPlotter]);
         stockPlotter++;
     }
+}
+
+
+
+//--------------------------------------------------------------
+//MARK: Rachit
+bool ofApp::weatherAPISetup()
+{
+    std::string url = "http://api.openweathermap.org/data/2.5/weather?zip=92123,us&units=imperial&appid=95a59f8290c53cc76ff537e9df438a30";
+    bool parsingSuccessful = json.open(url);
+    if(parsingSuccessful)
+    {
+        ofLogNotice("ofApp::setup") << json.getRawString(true);
+        string iconId = json["weather"][0]["icon"].asString();
+        string url = "http://openweathermap.org/img/w/"+iconId+".png";
+        weatherIcon.load(url);
+    }
+    else {
+        ofLogNotice("ofApp::setup") << "Failed to parse JSON.";
+    }
+    
+    
+    return parsingSuccessful;
+}
+
+bool ofApp::surfAPISetup()
+{
+    string surfURL = "http://api.spitcast.com/api/spot/forecast/229/";
+    bool parsingSuccessful = jsonSurf.open(surfURL);
+    if(parsingSuccessful)
+    {
+        ofLogNotice("ofApp::setup") << jsonSurf.getRawString(true);
+    }
+    else
+    {
+        ofLogNotice("ofApp::setup") << "Failed to parse surf JSON.";
+    }
+    
+    return parsingSuccessful;
+}
+
+string ofApp::currentTime()
+{
+    int epoch_time = ofGetUnixTime();
+    struct tm * timeinfo;
+    
+    /* Conversion to time_t as localtime() expects a time_t* */
+    time_t epoch_time_as_time_t = epoch_time;
+    
+    /* Call to localtime() now operates on time_t */
+    timeinfo = localtime(&epoch_time_as_time_t);
+    char buffer[26];
+    strftime(buffer, 26, "%H", timeinfo);
+    int hr;
+    sscanf(buffer, "%d", &hr);
+    string hrString;
+    if(hr > 12 && hr != 24)
+    {
+        hr = hr - 12;
+        hrString = to_string(hr) + "PM";
+    }
+    else if(hr == 12)
+    {
+        hrString = to_string(hr) + "PM";
+    }
+    else if(hr == 24)
+    {
+        hr = hr - 12;
+        hrString = to_string(hr) + "AM";
+    }
+    else
+    {
+        hrString = to_string(hr)+ "AM";
+    }
+    return hrString;
+}
+
+void ofApp::rachitDraw() {
+    string hrString = currentTime();
+    string resetTime = "1AM";
+    if(!resetTime.compare(hrString))
+    {
+        weatherAPISetup();
+        surfAPISetup();
+    }
+    
+    double temp = json["main"]["temp"].asInt();
+    string description = json["weather"][0]["description"].asString();
+    
+    string text = description + " with temperature of " + to_string(temp) + "F";
+    
+    ofDrawBitmapString(text, 20, 300);
+    weatherIcon.draw(0, 350);
+    
+    bool found = false;
+    string shape;
+    int waveSize;
+    Json::ArrayIndex i = 0;
+    while(!found && i < jsonSurf.size())
+    {
+        if(!(jsonSurf[i]["hour"].asString()).compare(hrString))
+        {
+            shape = jsonSurf[i]["shape_full"].asString();
+            waveSize = jsonSurf[i]["size_ft"].asInt();
+            found = true;
+        }
+        i++;
+    }
+    
+    string surfText = "Current surf condition is: " + shape + " with wave size of: " + to_string(waveSize) + "Ft";
+    cout << surfText << endl;
+    ofDrawBitmapString(surfText, 20, 400);
+
 }

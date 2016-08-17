@@ -12,17 +12,32 @@ class ofApp : public ofBaseApp{
 		void update();
 		void draw();
     
+    //MARK: Kevin
         void stockPlotSetup();
     void stockPlotUpdate();
+    ofxHistoryPlot * stockChart;
+    ofxJSONElement stockResult;
+    std::vector<float> stockData;
+    int stockPlotter;
+    void kevinDraw();
+
+    
+    //MARK: Sid
     void setupVideoGrabber();
     void updateVideoGrabber();
     void drawLiveVideo();
-    
-        ofxHistoryPlot * stockChart;
-        ofxJSONElement stockResult;
-        std::vector<float> stockData;
-        int stockPlotter;
     ofxFaceTracker tracker;
     ofVideoGrabber grabber;
+    
+    //MARK: Rachit
+    bool weatherAPISetup();
+    bool surfAPISetup();
+    string currentTime();
+    void rachitDraw();
+    ofxJSONElement json;
+    ofxJSONElement jsonSurf;
+    ofImage weatherIcon;
+    
+
     
 };
