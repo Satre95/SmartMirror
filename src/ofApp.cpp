@@ -32,6 +32,7 @@ void ofApp::draw(){
     ofSetColor(255);
     // time
     verdana14.drawString(ofGetTimestampString("%A, %B %e %H:%M"), 155, 92);
+    verdana14.drawString(fileText, 20, 500);
 }
 
 //------------------------------------------------------------------
