@@ -43,6 +43,7 @@ class ofApp : public ofBaseApp{
     ofxJSONElement json;
     ofxJSONElement jsonSurf;
     ofImage weatherIcon;
+    ofImage surfIcon;
     
 
     

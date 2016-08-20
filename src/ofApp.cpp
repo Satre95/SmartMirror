@@ -25,7 +25,8 @@ void ofApp::draw(){
     ofBackground(0, 0, 0);
     kevinDraw();
     rachitDraw();
-    ofDrawBitmapString(fileText, 20, 500);
+    ofDrawBitmapString(fileText, 20, 400);
+    
 }
 
 //------------------------------------------------------------------
@@ -50,7 +51,7 @@ void ofApp::updateDisplayText(int & args) {
 //MARK: Kevin
 
 void ofApp::kevinDraw() {
-    stockChart->draw(10, 10, 640, 240);
+    stockChart->draw(ofGetWindowWidth() - 640, ofGetWindowHeight()-240, 640, 240);
 }
 void ofApp::stockPlotSetup() {
     stockTimer.setup( 10000 ) ;
@@ -175,6 +176,7 @@ bool ofApp::surfAPISetup()
     if(parsingSuccessful)
     {
         ofLogNotice("ofApp::setup") << jsonSurf.getRawString(true);
+        surfIcon.load("images/surfIcon.jpg");
     }
     else
     {
@@ -229,13 +231,11 @@ void ofApp::rachitDraw() {
         surfAPISetup();
     }
     
-    double temp = json["main"]["temp"].asInt();
+    int temp = json["main"]["temp"].asInt();
     string description = json["weather"][0]["description"].asString();
     
     string text = description + " with temperature of " + to_string(temp) + "F";
     
-    ofDrawBitmapString(text, 20, 300);
-    weatherIcon.draw(0, 350);
     
     bool found = false;
     string shape;
@@ -253,6 +253,10 @@ void ofApp::rachitDraw() {
     }
     
     string surfText = "Current surf condition is: " + shape + " with wave size of: " + to_string(waveSize) + "Ft";
-    ofDrawBitmapString(surfText, 20, 400);
+    
+    weatherIcon.draw(0, 5, 100, 100);
+    ofDrawBitmapString(text, 10, 100);
+    surfIcon.draw(20, 110, 50, 50);
+    ofDrawBitmapString(surfText, 10, 180);
 
 }
