@@ -3,8 +3,6 @@
 #include "ofMain.h"
 #include "ofxHistoryPlot.h"
 #include "ofxJSON.h"
-#include "ofxCV.h"
-#include "ofxFaceTracker.h"
 
 class ofApp : public ofBaseApp{
 	public:
@@ -25,11 +23,7 @@ class ofApp : public ofBaseApp{
 
     
     //MARK: Sid
-    void setupVideoGrabber();
-    void updateVideoGrabber();
-    void drawLiveVideo();
-    ofxFaceTracker tracker;
-    ofVideoGrabber grabber;
+    
     
     //MARK: Rachit
     bool weatherAPISetup();

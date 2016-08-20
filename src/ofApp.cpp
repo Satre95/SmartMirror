@@ -1,12 +1,8 @@
 #include "ofApp.h"
 
-using namespace cv;
-using namespace ofxCv;
-
 //--------------------------------------------------------------
 void ofApp::setup(){
     stockPlotSetup();
-    setupVideoGrabber();
     bool weatherSetup = weatherAPISetup();
     bool surfSetup = surfAPISetup();
 }
@@ -14,7 +10,6 @@ void ofApp::setup(){
 //--------------------------------------------------------------
 void ofApp::update(){
     stockPlotUpdate();
-    updateVideoGrabber();
     
 }
 
@@ -27,21 +22,6 @@ void ofApp::draw(){
 
 //------------------------------------------------------------------
 //MARK: Sid
-void ofApp::drawLiveVideo() {
-    
-}
-
-void ofApp::setupVideoGrabber() {
-    grabber.initGrabber(ofGetWidth(), ofGetHeight());
-
-}
-
-void ofApp::updateVideoGrabber() {
-    grabber.update();
-    if( grabber.isFrameNew()) {
-        //Do CV stuff.
-    }
-}
 
 
 //--------------------------------------------------------------
@@ -100,7 +80,7 @@ void ofApp::stockPlotUpdate() {
         string one = "http://dev.markitondemand.com/MODApis/Api/v2/InteractiveChart/json?parameters=%7B%22Normalized%22%3Afalse%2C%22NumberOfDays%22%3A365%2C%22DataPeriod%22%3A%22Day%22%2C%22Elements%22%3A%5B%7B%22Symbol%22%3A%22";
         string two = "%22%2C%22Type%22%3A%22price%22%2C%22Params%22%3A%5B%22c%22%5D%7D%5D%7D";
         
-        String symbol = symbols[symbolIndex++ % symbols.size()];
+        string symbol = symbols[symbolIndex++ % symbols.size()];
         
         ofHttpResponse resp = ofLoadURL(one + symbol + two);
         
