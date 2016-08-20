@@ -251,7 +251,6 @@ void ofApp::rachitDraw() {
     }
     
     string surfText = "Current surf condition is: " + shape + " with wave size of: " + to_string(waveSize) + "Ft";
-    cout << surfText << endl;
     ofDrawBitmapString(surfText, 20, 400);
 
 }
