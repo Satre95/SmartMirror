@@ -25,6 +25,7 @@ void ofApp::draw(){
     ofBackground(0, 0, 0);
     kevinDraw();
     rachitDraw();
+    ofDrawBitmapString(fileText, 20, 500);
 }
 
 //------------------------------------------------------------------
@@ -41,8 +42,8 @@ void ofApp::updateDisplayText(int & args) {
     fileTimer.reset();
     ofSaveURLAsync(fileURL, "DisplayText.txt");
     ofBuffer fileBuffer = ofBufferFromFile("DisplayText.txt");
-    ofLogNotice() << fileBuffer.getText();
-    
+    //ofLogNotice() << fileBuffer.getText();
+    fileText = fileBuffer.getText();
 }
 
 //--------------------------------------------------------------

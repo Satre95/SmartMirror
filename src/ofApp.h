@@ -31,6 +31,7 @@ class ofApp : public ofBaseApp{
     ofxSimpleTimer fileTimer;
     ofURLFileLoader fileLoader;
     const string fileURL = "https://dl.dropboxusercontent.com/s/qeobv7jntqjxh14/SmartMirrorText.txt?dl=0";
+    string fileText;
 
     
     
