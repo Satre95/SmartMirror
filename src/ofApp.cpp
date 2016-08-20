@@ -29,7 +29,8 @@ void ofApp::draw(){
     ofBackground(0, 0, 0);
     kevinDraw();
     rachitDraw();
-    ofSetColor(245, 58, 135);
+    ofSetColor(255);
+    // time
     verdana14.drawString(ofGetTimestampString("%A, %B %e %H:%M"), 155, 92);
 }
 
@@ -47,8 +48,8 @@ void ofApp::updateDisplayText(int & args) {
     fileTimer.reset();
     ofSaveURLAsync(fileURL, "DisplayText.txt");
     ofBuffer fileBuffer = ofBufferFromFile("DisplayText.txt");
-    ofLogNotice() << fileBuffer.getText();
-    
+    //ofLogNotice() << fileBuffer.getText();
+    fileText = fileBuffer.getText();
 }
 
 //--------------------------------------------------------------
@@ -91,7 +92,7 @@ void ofApp::stockPlotSetup() {
     
     stockChart = new ofxHistoryPlot( NULL, "Current stock value:", stockResult["Elements"][0]["DataSeries"]["close"]["values"].size(), false); //NULL cos we don't want it to auto-update. confirmed by "true"
     //plot->setRange(50, 150); //hard range, will not adapt to values off-scale
-    stockChart->setColor( ofColor(0,255,0) ); //color of the plot line
+    stockChart->setColor( ofColor(255) ); //color of the plot line
     stockChart->setShowNumericalInfo(true);  //show the current value and the scale in the plot
     stockChart->setRespectBorders(true);	   //dont let the plot draw on top of text
     stockChart->setLineWidth(1);				//plot line width
@@ -130,7 +131,7 @@ void ofApp::stockPlotUpdate(int& args) {
     
         stockChart = new ofxHistoryPlot( NULL, "Current " + symbol + " value:", stockResult["Elements"][0]["DataSeries"]["close"]["values"].size(), false); //NULL cos we don't want it to auto-update. confirmed by "true"
         //plot->setRange(50, 150); //hard range, will not adapt to values off-scale
-        stockChart->setColor( ofColor(0,255,0) ); //color of the plot line
+        stockChart->setColor( ofColor(255) ); //color of the plot line
         stockChart->setShowNumericalInfo(true);  //show the current value and the scale in the plot
         stockChart->setRespectBorders(true);	   //dont let the plot draw on top of text
         stockChart->setLineWidth(1);				//plot line width
@@ -239,7 +240,7 @@ void ofApp::rachitDraw() {
     
     string text = description + " with temperature of " + to_string(temp) + "F";
     
-    ofDrawBitmapString(text, 20, 300);
+    verdana14.drawString(text, 20, 300);
     weatherIcon.draw(0, 350);
     
     bool found = false;
@@ -258,6 +259,6 @@ void ofApp::rachitDraw() {
     }
     
     string surfText = "Current surf condition is: " + shape + " with wave size of: " + to_string(waveSize) + "Ft";
-    ofDrawBitmapString(surfText, 20, 400);
+    verdana14.drawString(surfText, 20, 400);
 
 }
