@@ -22,6 +22,7 @@ class ofApp : public ofBaseApp{
     vector<string> symbols;
     void kevinDraw();
     ofxSimpleTimer stockTimer ;
+    ofTrueTypeFont	verdana14;
 
     
     //MARK: Sid
