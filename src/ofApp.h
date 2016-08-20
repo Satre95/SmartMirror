@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "ofxHistoryPlot.h"
 #include "ofxJSON.h"
+#include "ofxSimpleTimer.h"
 
 class ofApp : public ofBaseApp{
 	public:
@@ -12,7 +13,7 @@ class ofApp : public ofBaseApp{
     
     //MARK: Kevin
     void stockPlotSetup();
-    void stockPlotUpdate();
+    void stockPlotUpdate(int& args);
     ofxHistoryPlot * stockChart;
     ofxJSONElement stockResult;
     std::vector<float> stockData;
@@ -20,6 +21,7 @@ class ofApp : public ofBaseApp{
     int symbolIndex;
     vector<string> symbols;
     void kevinDraw();
+    ofxSimpleTimer stockTimer ;
 
     
     //MARK: Sid

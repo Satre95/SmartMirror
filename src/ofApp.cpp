@@ -9,8 +9,10 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    stockPlotUpdate();
-    
+    if (stockPlotter < stockResult["Elements"][0]["DataSeries"]["close"]["values"].size()){
+        stockChart->update(stockData[stockPlotter]);
+        stockPlotter++;
+    }
 }
 
 //--------------------------------------------------------------
@@ -31,9 +33,13 @@ void ofApp::kevinDraw() {
     stockChart->draw(10, 10, 640, 240);
 }
 void ofApp::stockPlotSetup() {
+    stockTimer.setup( 10000 ) ;
+    stockTimer.start(true) ;
     
     symbols = {"INTU", "APPLE", "GOOGL", "TSLA"};
     symbolIndex = 0;
+    
+    ofAddListener( stockTimer.TIMER_COMPLETE , this, &ofApp::stockPlotUpdate ) ;
     
     string one = "http://dev.markitondemand.com/MODApis/Api/v2/InteractiveChart/json?parameters=%7B%22Normalized%22%3Afalse%2C%22NumberOfDays%22%3A365%2C%22DataPeriod%22%3A%22Day%22%2C%22Elements%22%3A%5B%7B%22Symbol%22%3A%22";
     string two = "%22%2C%22Type%22%3A%22price%22%2C%22Params%22%3A%5B%22c%22%5D%7D%5D%7D";
@@ -74,9 +80,7 @@ void ofApp::stockPlotSetup() {
     stockPlotter = 0;
 }
 
-void ofApp::stockPlotUpdate() {
-    
-    if (ofGetElapsedTimeMillis() > 10000) {
+void ofApp::stockPlotUpdate(int& args) {
         string one = "http://dev.markitondemand.com/MODApis/Api/v2/InteractiveChart/json?parameters=%7B%22Normalized%22%3Afalse%2C%22NumberOfDays%22%3A365%2C%22DataPeriod%22%3A%22Day%22%2C%22Elements%22%3A%5B%7B%22Symbol%22%3A%22";
         string two = "%22%2C%22Type%22%3A%22price%22%2C%22Params%22%3A%5B%22c%22%5D%7D%5D%7D";
         
@@ -115,12 +119,9 @@ void ofApp::stockPlotUpdate() {
 
         
         stockChart->addHorizontalGuide(average, ofColor(255,150,150   )); //add custom reference guides
-    }
     
-    if (stockPlotter < stockResult["Elements"][0]["DataSeries"]["close"]["values"].size()){
-        stockChart->update(stockData[stockPlotter]);
-        stockPlotter++;
-    }
+    stockTimer.setup( 2000 ) ;
+    stockTimer.start(true) ;
 }
 
 
