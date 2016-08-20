@@ -25,6 +25,13 @@ class ofApp : public ofBaseApp{
 
     
     //MARK: Sid
+    void fileWatcherSetup();
+    void updateDisplayText(int & args);
+    float fileTimerDelay = 1000;
+    ofxSimpleTimer fileTimer;
+    ofURLFileLoader fileLoader;
+    const string fileURL = "https://dl.dropboxusercontent.com/s/qeobv7jntqjxh14/SmartMirrorText.txt?dl=0";
+
     
     
     //MARK: Rachit

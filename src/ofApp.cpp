@@ -5,6 +5,8 @@ void ofApp::setup(){
     stockPlotSetup();
     bool weatherSetup = weatherAPISetup();
     bool surfSetup = surfAPISetup();
+    
+    fileWatcherSetup();
 }
 
 //--------------------------------------------------------------
@@ -13,6 +15,8 @@ void ofApp::update(){
         stockChart->update(stockData[stockPlotter]);
         stockPlotter++;
     }
+    
+    fileTimer.update();
 }
 
 //--------------------------------------------------------------
@@ -24,7 +28,21 @@ void ofApp::draw(){
 
 //------------------------------------------------------------------
 //MARK: Sid
+void ofApp::fileWatcherSetup() {
+    ofSaveURLAsync(fileURL, "DisplayText.txt");
+    
+    fileTimer.setup(fileTimerDelay);
+    fileTimer.start(true);
+    ofAddListener(fileTimer.TIMER_COMPLETE, this, &ofApp::updateDisplayText);
+}
 
+void ofApp::updateDisplayText(int & args) {
+    fileTimer.reset();
+    
+    ofBuffer fileBuffer = ofBufferFromFile("DisplayText.txt");
+    ofLogNotice() << fileBuffer.getText();
+    
+}
 
 //--------------------------------------------------------------
 //MARK: Kevin
