@@ -17,6 +17,7 @@ void ofApp::update(){
     }
     
     fileTimer.update();
+    stockTimer.update() ;
 }
 
 //--------------------------------------------------------------
@@ -120,9 +121,8 @@ void ofApp::stockPlotUpdate(int& args) {
         
         float average = sum / stockResult["Elements"][0]["DataSeries"]["close"]["values"].size();
         stockPlotter = 0;
-        ofResetElapsedTimeCounter();
-        
-        stockChart = new ofxHistoryPlot( NULL, "Current" + symbol + "value:", stockResult["Elements"][0]["DataSeries"]["close"]["values"].size(), false); //NULL cos we don't want it to auto-update. confirmed by "true"
+    
+        stockChart = new ofxHistoryPlot( NULL, "Current " + symbol + " value:", stockResult["Elements"][0]["DataSeries"]["close"]["values"].size(), false); //NULL cos we don't want it to auto-update. confirmed by "true"
         //plot->setRange(50, 150); //hard range, will not adapt to values off-scale
         stockChart->setColor( ofColor(0,255,0) ); //color of the plot line
         stockChart->setShowNumericalInfo(true);  //show the current value and the scale in the plot
@@ -133,13 +133,15 @@ void ofApp::stockPlotUpdate(int& args) {
         stockChart->setDrawGrid(true);
         stockChart->setGridColor(ofColor(30)); //grid lines color
         stockChart->setGridUnit(14);
-        stockChart->setCropToRect(true);
+    stockChart->setCropToRect(true);
 
         
-        stockChart->addHorizontalGuide(average, ofColor(255,150,150   )); //add custom reference guides
+    stockChart->addHorizontalGuide(average, ofColor(255,150,150   )); //add custom reference guides
     
-    stockTimer.setup( 2000 ) ;
+    stockTimer.reset();
+    stockTimer.setup( 15000 ) ;
     stockTimer.start(true) ;
+
 }
 
 
