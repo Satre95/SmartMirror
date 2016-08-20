@@ -39,7 +39,7 @@ void ofApp::fileWatcherSetup() {
 
 void ofApp::updateDisplayText(int & args) {
     fileTimer.reset();
-    
+    ofSaveURLAsync(fileURL, "DisplayText.txt");
     ofBuffer fileBuffer = ofBufferFromFile("DisplayText.txt");
     ofLogNotice() << fileBuffer.getText();
     
