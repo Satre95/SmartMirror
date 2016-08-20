@@ -13,12 +13,14 @@ class ofApp : public ofBaseApp{
 		void draw();
     
     //MARK: Kevin
-        void stockPlotSetup();
+    void stockPlotSetup();
     void stockPlotUpdate();
     ofxHistoryPlot * stockChart;
     ofxJSONElement stockResult;
     std::vector<float> stockData;
     int stockPlotter;
+    int symbolIndex;
+    vector<string> symbols;
     void kevinDraw();
 
     
